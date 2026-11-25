@@ -8,7 +8,7 @@ class City {
     int y;
 
     public:
-    City(std::string name, int x, int y) {}
+    City(std::string name, int x, int y);
     std::string getName();
     int getX();
     int getY();

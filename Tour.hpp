@@ -15,7 +15,7 @@ class Tour {
     std::vector<City*> getCities();
     double getFitness() const;
 
-    double setFitness(double fitness);
+    void setFitness(double fitness);
     bool containsCity(City* city);
 
     double getDistanceBetweenCities(City* city1, City* city2);

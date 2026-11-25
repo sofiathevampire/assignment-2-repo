@@ -1068,3 +1068,6 @@
 {"t":1795624559275,"file":"ToDo.txt","type":"insert","rangeStart":83,"rangeEnd":83,"text":"p","textLength":1,"docVersion":268}
 {"t":1795624559392,"file":"ToDo.txt","type":"insert","rangeStart":84,"rangeEnd":84,"text":"p","textLength":1,"docVersion":269}
 {"t":1795624559716,"file":"ToDo.txt","type":"file-save"}
+{"t":1795624610893,"file":"ToDo.txt","type":"window-blur"}
+{"t":1795624628036,"file":"ToDo.txt","type":"window-focus"}
+{"t":1795624629304,"file":"","type":"session-end"}

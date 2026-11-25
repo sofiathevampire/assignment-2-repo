@@ -18,7 +18,7 @@ double Tour::getFitness() const {
     return fitness;
 }
 
-double Tour::setFitness(double fitness) {
+void Tour::setFitness(double fitness) {
     this->fitness = fitness;
 }
 
@@ -26,10 +26,10 @@ bool Tour::containsCity(City* city) {
     for(City* currentCity : cities) {
         if(currentCity == city) {
             return true;
-        } else {
-            return false;
         }
     }
+
+    return false;
 }
 
 double Tour::getDistanceBetweenCities(City* city1, City* city2) {
@@ -42,13 +42,13 @@ double Tour::getDistanceBetweenCities(City* city1, City* city2) {
 double Tour::getTourDistance() {
     double totalDistance = 0;
 
-    for(size_t i = 0; i < cities.size()-1; i++) {
+    for(int i = 0; i < cities.size()-1; i++) {
         totalDistance += getDistanceBetweenCities(cities[i], cities[i+1]);
-
-        // Returns to the starting city
-        totalDistance += getDistanceBetweenCities(cities.back(), cities.front());
-        return totalDistance;
     }
+
+    totalDistance += getDistanceBetweenCities(cities.back(), cities.front());
+
+    return totalDistance;
 }
 
 void Tour::determineFitness() {
