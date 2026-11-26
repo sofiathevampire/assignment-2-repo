@@ -1,9 +1,11 @@
 #include "City.hpp"
 
+
+
 City::City(std::string name, int x, int y) {
     this->name = name;
     this->x = x;
-    this-> y = y;
+    this->y = y;
 }
 
 std::string City::getName() {
